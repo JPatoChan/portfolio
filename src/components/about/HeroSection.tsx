@@ -24,7 +24,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigateTab }) => {
               {/* Modern SVG Avatar / Portrait */}
               <div className="w-full h-full rounded-full overflow-hidden bg-gradient-to-tr from-cyan-900 to-indigo-900 flex items-center justify-center text-cyan-200">
                 <img
-                  src="/profile.jpg"
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}
                   alt="Profile"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   onError={(e) => {
