@@ -1,5 +1,5 @@
 import React from 'react';
-import { PERSONAL_INFO } from '../../data/portfolioData';
+import { FEATURES_LIST, PERSONAL_INFO, SKILLS_DATA } from '../../data/portfolioData';
 import { Sparkles, ArrowRight, Download, Mail, Code, MapPin } from 'lucide-react';
 import type { TabType } from '../../types';
 
@@ -24,7 +24,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigateTab }) => {
               {/* Modern SVG Avatar / Portrait */}
               <div className="w-full h-full rounded-full overflow-hidden bg-gradient-to-tr from-cyan-900 to-indigo-900 flex items-center justify-center text-cyan-200">
                 <img
-                  src="/profile.jpg"
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}
                   alt="Profile"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   onError={(e) => {
@@ -77,12 +77,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigateTab }) => {
               <span className="text-[11px] text-slate-400">Experience</span>
             </div>
             <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 text-center md:text-left">
-              <span className="block text-lg sm:text-2xl font-black text-indigo-400">{PERSONAL_INFO.appsShipped}</span>
-              <span className="text-[11px] text-slate-400">Shipped Apps</span>
+              <span className="block text-lg sm:text-2xl font-black text-indigo-400">{SKILLS_DATA.length}</span>
+              <span className="text-[11px] text-slate-400">Skills</span>
             </div>
             <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 text-center md:text-left">
-              <span className="block text-lg sm:text-2xl font-black text-emerald-400">{PERSONAL_INFO.totalUsers}</span>
-              <span className="text-[11px] text-slate-400">Active Users</span>
+              <span className="block text-lg sm:text-2xl font-black text-emerald-400">{FEATURES_LIST.length}</span>
+              <span className="text-[11px] text-slate-400">Interactive Tools</span>
             </div>
           </div>
 

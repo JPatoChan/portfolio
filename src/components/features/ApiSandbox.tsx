@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Terminal, Play, Copy, Check, Code2, Eye, Loader2 } from 'lucide-react';
-import { PERSONAL_INFO, SKILLS_DATA } from '../../data/portfolioData';
+import { FEATURES_LIST, PERSONAL_INFO, SKILLS_DATA } from '../../data/portfolioData';
 
 export const ApiSandbox: React.FC = () => {
   const [selectedEndpoint, setSelectedEndpoint] = useState('/api/v1/profile');
@@ -48,8 +48,8 @@ export const ApiSandbox: React.FC = () => {
       } else if (selectedEndpoint === '/api/v1/metrics') {
         data = {
           experience: PERSONAL_INFO.yearsExperience,
-          appsShipped: PERSONAL_INFO.appsShipped,
-          activeUsers: PERSONAL_INFO.totalUsers,
+          skillsListed: SKILLS_DATA.length,
+          interactiveTools: FEATURES_LIST.length,
           uptime: '99.99%',
         };
       } else if (selectedEndpoint === '/api/v1/ping') {
