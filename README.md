@@ -4,7 +4,7 @@ A high-performance, cross-platform portfolio web application and native Android 
 
 **Connect with me:**
 - 🐙 [GitHub: JPatoChan](https://github.com/JPatoChan)
-- 💼 [LinkedIn: Patrick Nance](https://linkedin.com/in/patrick-nance)
+- 💼 [LinkedIn: Patrick Nance](https://www.linkedin.com/in/pnance94/)
 
 ---
 
@@ -32,7 +32,7 @@ A high-performance, cross-platform portfolio web application and native Android 
      - Interactive message form with client-side validation and confirmation feedback.
      - Direct email copy-to-clipboard button and mailto launcher.
      - Live location card with real-time Austin, TX clock ticker.
-     - Social and repository profile links ([GitHub](https://github.com/JPatoChan), [LinkedIn](https://linkedin.com/in/patrick-nance)).
+     - Social and repository profile links ([GitHub](https://github.com/JPatoChan), [LinkedIn](https://www.linkedin.com/in/pnance94/)).
 - **Mobile First UX**:
   - Android-style bottom tab bar with haptic feedback vibration.
   - Safe-area insets support (`env(safe-area-inset-bottom)`) for Android gesture bars and edge-to-edge displays.

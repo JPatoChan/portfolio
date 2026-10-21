@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
   location: "Shelbyville, TN",
   email: "cre8.pat.0@gmail.com",
   github: "https://github.com/JPatoChan",
-  linkedin: "https://linkedin.com/in/patrick-nance",
+  linkedin: "https://www.linkedin.com/in/pnance94/",
   status: "Available for Software Engineering Roles",
   yearsExperience: "2.5+ Years"
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import type { TabType } from '../types';
+import { PERSONAL_INFO } from '../data/portfolioData';
 import { Code, Sparkles, Mail, User } from 'lucide-react';
 import { getPlatformName, isNativeApp } from '../utils/platform';
 import { GithubIcon, LinkedinIcon } from './icons/SocialIcons';
@@ -72,7 +73,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onSelectTab }) => {
           </div>
 
           <a
-            href="https://github.com/JPatoChan"
+            href={PERSONAL_INFO.github}
             target="_blank"
             rel="noreferrer"
             className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition-colors"
@@ -82,7 +83,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onSelectTab }) => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/pnance94/"
+            href={PERSONAL_INFO.linkedin}
             target="_blank"
             rel="noreferrer"
             className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-cyan-400 border border-slate-800 transition-colors"
